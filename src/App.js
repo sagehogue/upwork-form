@@ -62,6 +62,7 @@ const TextArea = styled.textarea`
   padding: 0.25rem;
   border: 1px solid rgba(49, 49, 49, 0.45);
   border-radius: 3px;
+  resize: vertical;
 `;
 
 const Submit = styled.button`
