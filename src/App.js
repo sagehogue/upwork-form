@@ -1,5 +1,3 @@
-import logo from "./logo.svg";
-import "./App.css";
 import styled from "styled-components";
 import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
@@ -109,8 +107,8 @@ function App() {
   const {
     register,
     handleSubmit,
-    watch,
-    formState: { errors },
+    // watch,
+    // formState: { errors },
   } = useForm();
   const onSubmit = ({
     generalOffering,
@@ -169,9 +167,9 @@ function App() {
       option4,
       other,
     ];
-    console.log(values);
+    console.log(comments);
     let newSum = 0;
-    values.map((value) => {
+    values.forEach((value) => {
       if (Number.isInteger(value) || Number.isInteger(parseInt(value))) {
         newSum = newSum + parseInt(value);
       } else {
