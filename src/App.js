@@ -167,7 +167,7 @@ function App() {
       option4,
       other,
     ];
-    console.log(comments);
+
     let newSum = 0;
     values.forEach((value) => {
       if (Number.isInteger(value) || Number.isInteger(parseInt(value))) {
@@ -212,6 +212,7 @@ function App() {
       "Delete",
       "Tab",
     ];
+    console.log(comments);
     console.log(event.key);
     if (
       acceptableKeys.includes(parseInt(event.key)) ||
